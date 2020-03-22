@@ -1,34 +1,23 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
-    color: #292929;
-    font: 90% Roboto, Arial, sans-serif;
+    color: black;
+    font-family: Arial, sans-serif;
     font-weight: 300;
+    font-size: 90%;
 }
 
-p {
-    padding: 0 10px;
-    line-height: 1.8;
-}
-
-ul li {
-    padding-right: 10px;
-    line-height: 1.6;
-}
-
-h3 {
-    padding: 5px 20px;
-    margin: 0;
-}
-
-div#header {
+header {
     position: relative;
 }
 
-div#header h1 {
+header h1 {
     height: 80px;
     line-height: 80px;
     margin: 0;
@@ -37,7 +26,7 @@ div#header h1 {
     color: #292929;
 }
 
-div#header a {
+header a {
     position: absolute;
     right: 0;
     top: 23px;
@@ -45,35 +34,69 @@ div#header a {
     color: #006;
 }
 
-div#navigation {
-    background: #7cb71c;
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: -15px;
 }
 
-div#navigation li {
+h2 {
+    font-size: 1em;
+    margin: 14.4px 0px;
+    padding: 0px 10px;
+    line-height: 1.8;
+}
+
+h3 {
+    padding: 5px 20px;
+}
+
+ul {
+    margin: 14.4px 0px;
+    padding-left: 40px;
+}
+
+ul li {
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+#content {
+    order: 2;
+    width: 50%;
+}
+
+p {
+    padding: 0 10px;
+    line-height: 1.8;
+    margin: 14.40px 0px;
+}
+
+#navigation {
+    order: 1;
+    background: #7cb71c;
+    width: 25%;
+
+}
+
+#navigation li {
     list-style: none;
 }
 
-div#extra {
+#extra {
+    order: 3;
     background: #147FA9;
+    width: 25%;
 }
 
-div#footer {
+footer {
+    margin: 14.4px 0px;
+}
+
+footer p {
     background: #42444e;
     color: #fff;
-}
-
-div#footer p {
     padding: 20px 10px;
-}
-
-body {
-    display: flexbox;
-}
-
-#header {
-
-}
-
-#wrapper {
-    justify-content: left;
 }
